@@ -1,0 +1,1 @@
+git push  ssh://git@github.com/proxima-tsentavra/sprint1  main

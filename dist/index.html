@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello</title>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Список чатов</title>
+    <script src="index.js"></script>
 </head>
 <body>
-  <div>My static 2.0.</div>
+    <script>
+        /**
+         * @typedef {Chat}
+         * @prop {string} title
+         * @prop {string} lastMessage
+         */
+
+        const chats = [
+            {
+                title: 'kinopoisk',
+                lastMessage: 'Лучшие фильмы с Невским...',
+            },
+            {
+                title: 'abramov_fan',
+                lastMessage: 'New react features...',
+            },
+        ];
+
+        document.body.appendChild(makeChatsList(chats));
+				/*
+					<ul>
+						<li>...</li>
+						...
+					</ul>
+				*/
+    </script>
 </body>
+</html>

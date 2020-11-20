@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="My first chat">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="main.css?v=1.0">
+  <title>Настройки</title>
+</head>
+
+<body class="layout">
+    <main class="main main_settings">
+        <div class="panel panel_settings">
+            <div class="panel__header">
+                <h3>Мой профиль</h3>
+            </div>
+            <div class="panel__body">
+                <div class="row">
+                    <div class="col col_50">
+                        <form class="form">
+                            <div class="field">
+                                <label class="field__label" for="first_name">Имя</label>
+                                <input type="text" class="field__text"  value="Алексей" name="first_name" id="first_name">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="second_name">Фамилия</label>
+                                <input type="text" class="field__text" value="Иванов"  name="second_name" id="second_name">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="second_name">Ник</label>
+                                <input type="text" class="field__text"  value="alex"  name="display_name" id="display_name">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="login">Логин</label>
+                                <input type="text" class="field__text" value="alex" name="login" id="login">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="email">Email</label>
+                                <input type="email" class="field__text" value="alex@alex.ru"  name="email" id="email">
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="phone">Телефон</label>
+                                <input type="text" class="field__text"  value="+79160000000" name="phone" id="phone">
+                            </div>
+                            <button type="button" class="form__action form_button">Запомнить</button>
+                        </form>
+                    </div>
+                    <div class="col col_50">
+                        <div class="avatar avatar_settings">
+                            <h4 class="avatar__title">Аватар</h4>
+                            <img class="avatar__photo" src="avatar.png">
+                            <button   type="button" class="avatar__action avatar__action_middle">Изменить</button>
+                        </div>
+                        <div class="change-password">
+                            <form class="form">
+                                <h4 class="form__title form__title_center">Пароль</h4>
+                                <div class="field  field_required">
+                                    <label class="field__label" for="password">Старый пароль</label>
+                                    <input type="password" class="field__text" name="oldPassword" id="oldPassword">
+                                </div>
+                                <div class="field  field_required">
+                                    <label class="field__label" for="password">Новый пароль</label>
+                                    <input type="password" class="field__text" name="newPassword" id="newPassword">
+                                </div>
+                                <button type="button" class="form__action form_button">Сменить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer"><a href="mailto:support@example.com">support@example.com</a></footer> 
+    <script src="main.js?v=1.0"></script>
+</body>
+</html>
